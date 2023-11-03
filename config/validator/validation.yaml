@@ -17,3 +17,12 @@ App\Entity\Location:
           min: -180
           max: 180
           groups: ['create','edit']
+
+App\Entity\Measurement:
+  properties:
+    date:
+      - NotBlank:
+          groups: ['create','edit']
+    celsius:
+      - NotBlank:
+          groups: ['create','edit']
